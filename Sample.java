@@ -4,10 +4,14 @@ class Sample{
     public static void main(String[] args){
         List<Integer> list= new LinkedList<>();
         for(int i=0; i<10; i++){
-            list.add(i*i);
-        } 
+            list.add(i*i); 
+        }
 
-        System.out.println(list); 
+        for(int element: list){
+            if(element<50){
+                System.out.print(element+" "); 
+            }
+        }
 
     }
 }
